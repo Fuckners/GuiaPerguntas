@@ -1,0 +1,36 @@
+
+<%- include('partials/head', {titulo: 'Home'})%>
+<body>
+    
+    <%- include('partials/header')%>
+
+    <div class="container">
+        <div class="cabecalho">
+            <h1>Perguntas do dia!</h1>
+            <a href="/perguntar" class="btn btn-dark"><h2>Perguntar</h2></a>
+        </div>
+        <hr>
+        <%for (pergunta of perguntas) {%>
+        <div class="card">
+            <div class="card-header">
+                    <a href="/pergunta/<%=pergunta.id%>">
+                        <h3 class="clicavel"><%=pergunta.titulo%></h3>
+                    </a> <!-- redirecionar para responder pergunta -->
+            </div>
+            <div class="card-body">
+                <%if (pergunta.descricao.length > 100) {%>
+                    <p><%=pergunta.descricao.slice(0, 100)%>...</p>
+                <%} else {%>
+                    <p><%=pergunta.descricao%></p>
+                <%}%>
+            </div>
+            <div class="card-footer">
+                <small>Criada em: <%=pergunta.createdAt%></small>
+            </div>
+        </div>
+        <%}%>
+
+    </div>
+
+</body>
+<%- include('partials/footer')%>

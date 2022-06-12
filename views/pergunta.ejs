@@ -1,0 +1,51 @@
+<%- include('partials/head', {titulo: 'Perguntas'})%>
+<body>
+    
+    <%- include('partials/header')%>
+
+    <div class="container">
+        <div class="cabecalho">
+            <h1>Pergunta: <%=pergunta.id%></h1>
+            <a href="/" class="btn btn-dark"><h2>Home</h2></a>
+        </div>
+        <hr>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3><%=pergunta.titulo%></h3>
+            </div>
+            <div class="card-body">
+                <p><%=pergunta.descricao%></p>
+            </div>
+            <div class="card-footer">
+                <small>Criada em: <%=pergunta.createdAt%></small>
+            </div>
+        </div>
+        <hr>
+        <form class="resposta" action="/salvarresposta" method="post">
+            <div class="cabecalhores">
+                <button type="submit" class="btn btn-dark">Enviar resposta</button>
+                <label for="resposta"><h4>Responder:</h4></label>
+            </div>
+            <textarea name="corpo" id="resposta" class="form-control" placeholder="Escreva uma resposta" required></textarea>
+            <input type="hidden" value="<%=pergunta.id%>" name="idPergunta">
+        </form>
+
+        <div class="respostas">
+            <hr>
+            <h2>Respostas</h2>
+            <%for (resposta of respostas) {%>
+                <div class="card">
+                    <div class="card-body">
+                        <p><%=resposta.corpo%></p>
+                    </div>
+                    <div class="card-footer">
+                        <small>Respondido em: <%=resposta.createdAt%></small>
+                    </div>
+                </div>
+            <%}%>
+        </div>
+    </div>
+
+</body>
+<%- include('partials/footer')%>

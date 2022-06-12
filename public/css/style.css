@@ -1,0 +1,64 @@
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    margin-top: 5vh;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+}
+
+textarea {
+    min-height: 2.7rem;
+}
+
+.card {
+    margin-top: 20px
+}
+
+.card + .card {
+    margin-top: 35px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.clicavel {
+    text-decoration: none;
+}
+
+.clicavel:hover {
+    color: #00000098;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card p {
+    font-size: 1.3rem;
+}
+
+.container {
+    padding: 20px;
+}
+
+.resposta {
+    margin-top: 30px;
+}
+
+.cabecalhores {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.respostas {
+    overflow-y: auto;
+}
