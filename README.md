@@ -1,5 +1,5 @@
 # [GuiaPerguntas](http://137.184.100.34) 🔗
-⬆⬆⬆ [Site de perguntas e respostas](http://137.184.100.34) criado durante o curso de Node.js do Guia do Programado    
+⬆⬆⬆ [Site de perguntas e respostas](http://137.184.100.34) criado durante o curso de Node.js do Guia do Programador    
 O site vai estar rodando até o dia 10/07 em um droplet do [DigitalOcean](https://cloud.digitalocean.com/)!    
 
 ## ⭐ Projeto Concluído (Passivo de futuras atualizações) ⭐
