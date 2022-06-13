@@ -1,5 +1,5 @@
 # [GuiaPerguntas](http://137.184.100.34) 🔗
-⬆⬆⬆ [Site de perguntas e respostas](http://137.184.100.34) criado durante o curso de Node.js do Guia do Programador    
+⬆⬆⬆ [Site de perguntas e respostas](http://137.184.100.34) criado durante o curso de Node.js do Guia do Programador, onde foi mostrado como fazer conexões, entre o Node.js e um database, usando o Sequelize, além de aprendermos a como criar uma VPS e carregar os arquivos nela!    
 O site vai estar rodando até o dia 10/07 em um droplet do [DigitalOcean](https://cloud.digitalocean.com/)!    
 
 ## ⭐ Projeto Concluído (Passivo de futuras atualizações) ⭐
